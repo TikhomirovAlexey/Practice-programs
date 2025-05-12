@@ -7,6 +7,7 @@ const stopButton = document.querySelector('.stop');
 const volume = document.querySelector('.volume');
 const timing = document.querySelector('.timing');
 const currentTimeEl = document.querySelector('.currentTime');
+const allTimeEl = document.querySelector('.allTime');
 
 let identifierSetInterval = null;
 let wasVideoPlaying = false;
@@ -19,7 +20,7 @@ function changeProgress() {
     let minutes = parseInt(intCurrentTime / 60);
     let seconds = intCurrentTime - (60 * minutes);
 
-    currentTimeEl.innerText = `${minutes.toString().length !== 2 ? '0' + minutes : minutes}:${seconds.toString().length !== 2 ? '0' + seconds : seconds}`;
+    currentTimeEl.innerText = `${minutes.toString().length < 2 ? '0' + minutes : minutes}:${seconds.toString().length < 2 ? '0' + seconds : seconds}`;
 }
 
 window.addEventListener('load', () => {
@@ -27,6 +28,10 @@ window.addEventListener('load', () => {
     timing.max = video.duration;
     video.volume = volume.value;
     currentTimeEl.innerText = '00:00';
+
+    let minutes = parseInt(video.duration / 60);
+    let seconds = parseInt(video.duration - (60 * minutes));
+    allTimeEl.innerText = `${minutes.toString().length < 2 ? '0' + minutes : minutes}:${seconds.toString().length < 2 ? '0' + seconds : seconds}`;
 });
 
 playButton.addEventListener('click', () => {
