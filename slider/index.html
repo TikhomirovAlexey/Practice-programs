@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="slider">
+            <svg
+                class="arrow arrow__left"
+                width="80"
+                height="80"
+                viewBox="0 0 34 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M3 3L17 17L31 3"
+                    stroke="#000000"
+                    stroke-width="3"
+                    stroke-linecap="square"
+                />
+            </svg>
+            <svg
+                class="loader"
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path d="M21 12a9 9 0 11-6.219-8.56"/>
+            </svg>
+            <svg
+                class="arrow arrow__right"
+                width="80"
+                height="80"
+                viewBox="0 0 34 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M3 3L17 17L31 3"
+                    stroke="#000000"
+                    stroke-width="3"
+                    stroke-linecap="square"
+                />
+            </svg>
+            <div class="full-screen">
+                <svg
+                    class="full-screen-ico"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect
+                        width="48"
+                        height="48"
+                        fill="white"
+                        fill-opacity="0.01"
+                    />
+                    <path
+                        d="M33 6H42V15"
+                        stroke="black"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M42 33V42H33"
+                        stroke="black"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M15 42H6V33"
+                        stroke="black"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M6 15V6H15"
+                        stroke="black"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </div>
+            <div class="slider-item hidden">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="slider-item hidden">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="slider-item hidden">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="slider-item hidden">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="slider-item hidden">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <div class="slider-item hidden">
+                <img src="img/6.jpg" alt="">
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

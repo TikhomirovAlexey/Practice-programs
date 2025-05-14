@@ -11,3 +11,7 @@
 ## [Видеоплеер](./videoplayer/index.html)
 
 Видеоплеер, сделанный в целях практики javascript.
+
+## [Слайдер](./slider/index.html)
+
+Слайдер. Выполнено в целях практики javascript.
