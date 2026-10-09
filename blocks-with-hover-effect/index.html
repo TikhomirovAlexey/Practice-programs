@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card card_1"></div>
+        <div class="card card_2"></div>
+        <div class="card card_3"></div>
+    </div>
+    <script>
+        let cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', event => {
+                let x = event.pageX - card.offsetLeft;
+                let y = event.pageY - card.offsetTop;
+                card.style.setProperty('--x', x + 'px');
+                card.style.setProperty('--y', y + 'px');
+            });
+        })
+    </script>
+</body>
+</html>
